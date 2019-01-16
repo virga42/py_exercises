@@ -14,12 +14,12 @@ arr = ( (11,  2,   4),
 def abs_diff(x, y):
     return abs(x - y)
 
-def dd(arr):
+def diagonalDifference(arr):
     matrix_size = len(arr)
     total_diag_back = 0
     total_diag_forward = 0
     for i in range(0, matrix_size):
         total_diag_back += arr[i][i]
         total_diag_forward += arr[i][matrix_size-i-1]
-    return abs_diff(total_diag_back, total_diag_forward)
+    return abs(total_diag_back - total_diag_forward)
 

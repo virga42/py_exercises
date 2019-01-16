@@ -17,7 +17,7 @@ class TestDiagonalDifference(unittest.TestCase):
                 (10,  8, -12) )
     
     def test_dd(self):
-        self.assertEqual(dd(self.arr), 15)
+        self.assertEqual(diagonalDifference(self.arr), 15)
         
         
 
