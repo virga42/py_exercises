@@ -1,5 +1,5 @@
 import unittest
-from sample import addition, diagonalDifference
+import exercises
 
 class TestOperators(unittest.TestCase):
     def test_additon(self):
