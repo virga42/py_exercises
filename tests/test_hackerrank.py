@@ -1,9 +1,6 @@
 import unittest
-import exercises
+from exercises import hackerrank
 
-class TestOperators(unittest.TestCase):
-    def test_additon(self):
-        self.assertEqual(addition(1, 2), 3)
 
 class TestDiagonalDifference(unittest.TestCase):
     """ 
@@ -13,13 +10,13 @@ class TestDiagonalDifference(unittest.TestCase):
     def setUp(self):
         """ Setting up for the test """
         self.arr = ( (11,  2,   4), 
-                ( 4,  5,   6),
-                (10,  8, -12) )
+                     ( 4,  5,   6),
+                     (10,  8, -12) )
     
     def test_dd(self):
-        self.assertEqual(diagonalDifference(self.arr), 15)
-        
-        
+        """ testing happy path diagonal diference """
+        self.assertEqual(hackerrank.diagonalDifference(self.arr), 15)
+            
 
 if __name__ == '__main__':
     unittest.main()
